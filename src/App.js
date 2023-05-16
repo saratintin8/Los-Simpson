@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import Container from "./Components/Container";
+import Header from "./Components/Header";
+import styled from "styled-components";
+import Welcome from "./Components/Welcome";
+
 
 function App() {
+
+  const reqApi = async () => {
+    const api = await fetch('');
+    const frase = await api.json();
+    console.log(frase);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <Container>
+      <Header />
+      <Welcome />
+    </Container>
+
   );
 }
-
-export default App;
+export default App; 
