@@ -1,13 +1,14 @@
 import styled from "styled-components";
 import Imagen from "../Images/the-simpson.png";
 
-export default function Welcome() {
+export default function Welcome(props) {
+    const {reqApi} = props;
     return (
         <ContentLogo>
             <WelcomeText>
                 Bienvenido, para poder utilizar las frases, da clic en la imagen
             </WelcomeText>
-            <Image src={Imagen} alt="lossimpson" />
+            <Image src={Imagen} alt="lossimpson" onClick={reqApi} />
         </ContentLogo>
     );
 }
