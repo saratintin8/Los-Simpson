@@ -3,7 +3,7 @@ import styled from "styled-components";
 export default function Header() {
     return (
         <Title>
-            Las mejores frases de Los Simpson
+            <p><em>Las mejores frases de Los Simpson</em></p>
         </Title>
 
     );

@@ -8,7 +8,7 @@ export default function Welcome(props) {
             <WelcomeText>
                 Bienvenido, para poder utilizar las frases, da clic en la imagen
             </WelcomeText>
-            <Image src={Imagen} alt="lossimpson" onClick={reqApi} />
+            <Image src={Imagen} alt="Los Simpson" onClick={reqApi} />
         </ContentLogo>
     );
 }

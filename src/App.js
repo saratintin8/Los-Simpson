@@ -13,9 +13,6 @@ function App() {
     const frase = await api.json();
     setCharacter(frase);
   };
-  reqApi();
-
-  console.log(character);
 
   return (
 
