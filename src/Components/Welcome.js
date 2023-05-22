@@ -6,7 +6,7 @@ export default function Welcome(props) {
     return (
         <ContentLogo>
             <WelcomeText>
-                Bienvenido, para poder utilizar las frases, da clic en la imagen
+                <p><em>Bienvenido, da click en la imagen para poder utilizar las frases</em></p>
             </WelcomeText>
             <Image src={Imagen} alt="Los Simpson" onClick={reqApi} />
         </ContentLogo>
